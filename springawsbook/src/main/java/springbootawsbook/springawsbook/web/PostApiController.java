@@ -1,9 +1,7 @@
 package springbootawsbook.springawsbook.web;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import springbootawsbook.springawsbook.service.PostsService;
 import springbootawsbook.springawsbook.web.dto.PostsSaveRequestDto;
 
@@ -17,4 +15,7 @@ public class PostApiController {
     public Long save(@RequestBody PostsSaveRequestDto requestDto){
         return postsService.save(requestDto);
     }
+
+//    @PutMapping("/api/v1/posts/{id}")
+//    public Long update(@PathVariable Long id, @RequestBody Posts)
 }
