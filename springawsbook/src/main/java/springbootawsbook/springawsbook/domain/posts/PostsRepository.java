@@ -1,2 +1,7 @@
-package springbootawsbook.springawsbook.domain.posts;public class PostsRepository {
+package springbootawsbook.springawsbook.domain.posts;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface PostsRepository extends JpaRepository<Posts, Long> {
+
 }
