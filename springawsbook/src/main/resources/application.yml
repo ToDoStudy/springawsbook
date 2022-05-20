@@ -13,6 +13,12 @@ spring:
 #        show_sql: true
         format_sql: true
 
+  security:
+    oauth2:
+      client:
+        clientId: 인증정보
+        clientSecret: 인증정보
+
 logging.level:
   org.hibernate.SQL: debug
 #  org.hibernate.type: trace
