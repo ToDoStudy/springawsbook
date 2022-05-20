@@ -1,22 +1,33 @@
 package springbootawsbook.springawsbook.web;
 
 import lombok.RequiredArgsConstructor;
+import org.hibernate.Session;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import springbootawsbook.springawsbook.config.auth.dto.SessionUser;
 import springbootawsbook.springawsbook.service.PostsService;
 import springbootawsbook.springawsbook.web.dto.PostsResponseDto;
+
+import javax.servlet.http.HttpSession;
 
 @RequiredArgsConstructor
 @Controller
 public class IndexController {
 
     private final PostsService postsService;
+    private final HttpSession httpSession;
 
     @GetMapping("/")
     public String index(Model model) {
-        model.addAttribute("posts", postsService.findAllDesc());
+        model.addAttribute("post", postsService.findAllDesc());
+        SessionUser user = (SessionUser) httpSession.getAttribute("user");
+
+        if (user != null) {
+            model.addAttribute("userName", user.getName());
+        }
+
         return "index";
     }
 
@@ -33,4 +44,6 @@ public class IndexController {
 
         return "posts-update";
     }
+
+
 }
