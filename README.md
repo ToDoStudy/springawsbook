@@ -17,9 +17,9 @@
 &nbsp;
 
 **✔️ version**
-Spring Boot : 2.6.7
-Project : Gradle Project
-Java : 11
+- Spring Boot : 2.6.7
+- Project : Gradle Project
+- Java : 11
 
 &nbsp;
 
