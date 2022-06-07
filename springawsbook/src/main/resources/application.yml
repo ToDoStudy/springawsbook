@@ -1,9 +1,9 @@
 spring:
-#  datasource:
-#    url: jdbc:h2:tcp://localhost//Users/leekyoungchang/Desktop/Study/Computer/github/toyproject/db/springandaws;MODE=MYSQL
-#    username: sa
-#    password: 1234
-#    driver-class-name: org.h2.Driver
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://springaws.csne7kbcpzzg.ap-northeast-2.rds.amazonaws.com:3306/spring_rds
+    username: chang123
+    password: chang123
 
   jpa:
     show_sql: true
