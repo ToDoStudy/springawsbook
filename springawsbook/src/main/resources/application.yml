@@ -1,9 +1,9 @@
 spring:
-#  datasource:
-#    driver-class-name: com.mysql.cj.jdbc.Driver
-#    url: jdbc:mysql://springaws.csne7kbcpzzg.ap-northeast-2.rds.amazonaws.com:3306/spring_rds
-#    username: chang123
-#    password: chang123
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://springaws.csne7kbcpzzg.ap-northeast-2.rds.amazonaws.com:3306/spring_rds
+    username: chang123
+    password: chang123
 
   jpa:
     show_sql: true
