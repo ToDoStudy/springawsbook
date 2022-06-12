@@ -24,3 +24,17 @@
 &nbsp;
 
 **✔️ AWS**
+- EC2
+  - amazonaws
+- RDS
+  - MYSQL
+
+&nbsp;
+
+**✔ 이외**
+- 네이버 소셜 로그인
+- 구글 소셜 로그인
+
+&nbsp;
+
+책에서 나온 Travis CI를 적용하려고 하였으나 한달 이후로는 유료화가 되어 수동 `Test & Build` 작업까지 진행했습니다.
